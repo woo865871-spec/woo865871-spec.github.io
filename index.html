@@ -122,15 +122,26 @@
       <h2 class="section-title reveal">Music</h2>
 
       <div class="music-player reveal">
-        <iframe
-          class="music-embed-real"
-          src="https://www.youtube.com/embed/ySJCufHJC0Q"
-          title="낭만 — 김서월"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+        <div class="carousel-frame-wrap">
+          <iframe
+            id="music-frame"
+            class="music-embed-real"
+            src="https://www.youtube.com/embed/ySJCufHJC0Q"
+            title="낭만 — 김서월"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+          <div class="carousel-swipe-zone" id="carousel-swipe"></div>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="music-prev" aria-label="이전 곡">&#8592;</button>
+          <span class="carousel-counter" id="music-counter">1 / 6</span>
+          <button class="carousel-btn" id="music-next" aria-label="다음 곡">&#8594;</button>
+        </div>
+        <div class="carousel-dots" id="music-dots"></div>
 
         <p class="music-caption">하이라이트처럼 반으로 가려진 모래시계 안을 못 보니까 지금을 즐겨야 한다는 곡.</p>
       </div>
@@ -254,6 +265,7 @@
   <!-- Scripts -->
   <script src="scripts/typewriter.js"></script>
   <script src="scripts/scroll-reveal.js"></script>
+  <script src="scripts/carousel.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>

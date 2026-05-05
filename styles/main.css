@@ -177,6 +177,79 @@ body {
   aspect-ratio: 16 / 9;
   border-radius: 6px;
   border: none;
+  display: block;
+}
+
+.carousel-frame-wrap {
+  position: relative;
+}
+
+.carousel-swipe-zone {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+@media (hover: hover) {
+  .carousel-swipe-zone { display: none; }
+}
+
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.carousel-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.carousel-counter {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  min-width: 3rem;
+  text-align: center;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.cdot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.cdot--active {
+  background: var(--accent);
 }
 
 .music-caption {
