@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"gh api repos/woo865871-spec/woo865871-spec.github.io/environments/github-pages \\\\\\n  --method PUT \\\\\\n  --field deployment_branch_policy='{\\\"protected_branches\\\":false,\\\"custom_branch_poli...",
+  "error": "Exit code 1\n{\"message\":\"Invalid request.\\n\\nInvalid property /deployment_branch_policy: `\\\"{\\\\\\\"protected_branches\\\\\\\":false,\\\\\\\"custom_branch_policies\\\\\\\":false}\\\"` is not of type `object`.\",\"documentation_url\":\"https://docs.github.com/rest/deployments/environments#create-or-update-an-environment\",\"status\":\"422\"}gh: Invalid request.\n\nInvalid property /deployment_branch_policy: `\"{\\\"protected_branches\\\":false,\\\"custom_branch_policies\\\":false}\"` is not of type `object`. (HTTP 422)",
+  "timestamp": "2026-05-05T14:21:15.489Z",
+  "retry_count": 2
+}
