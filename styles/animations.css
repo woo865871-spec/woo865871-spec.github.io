@@ -1,0 +1,50 @@
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+}
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger siblings */
+.reveal:nth-child(2) { transition-delay: 0.08s; }
+.reveal:nth-child(3) { transition-delay: 0.16s; }
+.reveal:nth-child(4) { transition-delay: 0.24s; }
+
+/* Typewriter cursor */
+.typewriter-cursor::after {
+  content: '|';
+  display: inline-block;
+  color: var(--accent);
+  animation: blink 0.85s step-end infinite;
+  margin-left: 2px;
+}
+.typewriter-done::after {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Scroll arrow bounce */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+.scroll-arrow {
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Link underline animation */
+.qa-answer a,
+.contact-email,
+.contact-social {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}

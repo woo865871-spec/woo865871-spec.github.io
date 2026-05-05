@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --bg:      #FAF8F5;
+  --text:    #2D2A26;
+  --accent:  #E8A87C;
+  --accent2: #C38D9E;
+  --border:  #E5DDD0;
+  --muted:   #8C857C;
+
+  /* Typography */
+  --font-serif: 'Noto Serif KR', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --max-width: 720px;
+  --gutter: clamp(1.25rem, 5vw, 2.5rem);
+  --section-pad: clamp(4.5rem, 9vw, 7rem);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+}
